@@ -9,10 +9,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-          "primary-indigo": "#8B6FFF",
-      "dark-gray": "rgba(51, 51, 51, 0.7)",
-      "light-gray": "#333333",
-      extralight: "rgba(51, 51, 51, 0.1)",
+        "primary-indigo": "#8B6FFF",
+        "light-gray": "rgba(51, 51, 51, 0.7)",
+        "dark-gray": "#333333",
+        "extra-light": "rgba(51, 51, 51, 0.1)",
+        "dark-500": "rgba(0, 0, 0, 0.6)",
       },
     },
   },

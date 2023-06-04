@@ -1,6 +1,6 @@
 <template>
   <div
-    class="px-4 py-6 bg-white border-t-4 border-indigo-500 shadow-xl md:px-5 rounded-t-md md:rounded-tl-none md:rounded-r-md md:mt-1"
+    class="px-4 py-6 bg-white border-t-4 border-indigo-500 shadow-lg rounded-t-xl md:px-5 md:rounded-tl-none md:rounded-r-md md:mt-1"
   >
     <div>
       <BaseXIcon
@@ -9,17 +9,17 @@
       />
     </div>
 
-    <h4 class="font-semibold text-[20px] leading-[24px]">
+    <h4 class="font-bold text-[20px] text-dark-gray leading-[24px]">
       You’re just steps away...
     </h4>
 
-    <p class="mt-2 text-sm font-normal text-gray-600">
+    <p class="mt-2 text-sm font-normal text-dark-gray">
       ... to get the best recommendations for your term insurance
     </p>
 
     <ul class="mt-4">
       <li
-        class="flex items-center justify-between py-4 text-sm font-normal text-gray-600 line-through border-b border-gray-400 cursor-pointer hover:text-indigo-500"
+        class="flex items-center justify-between py-4 text-sm font-normal line-through border-b cursor-pointer text-dark-gray border-extra-light hover:text-indigo-500"
       >
         Select an insurance type
         <div>
@@ -29,7 +29,7 @@
         </div>
       </li>
       <li
-        class="flex items-center justify-between py-4 text-sm font-semibold border-b border-gray-400 cursor-pointer hover:text-indigo-500"
+        class="flex items-center justify-between py-4 text-sm font-bold border-b cursor-pointer text-dark-gray border-extra-light hover:text-indigo-500"
       >
         Get detailed report
         <div class="">
@@ -41,12 +41,12 @@
         </div>
       </li>
       <li
-        class="py-4 text-sm font-normal text-gray-600 border-b border-gray-400 cursor-pointer hover:text-indigo-500"
+        class="py-4 text-sm font-normal border-b cursor-pointer text-dark-gray border-extra-light hover:text-indigo-500"
       >
         Compare insurance plans
       </li>
       <li
-        class="pt-4 text-sm font-normal text-gray-600 cursor-pointer hover:text-indigo-500"
+        class="pt-4 text-sm font-normal cursor-pointer text-dark-gray hover:text-indigo-500"
       >
         Choose an advisor
       </li>
@@ -63,15 +63,13 @@ export default {
     BaseCheckMarkCircleIcon,
   },
 
-
   data() {
-    return {
-    };
+    return {};
   },
 
   methods: {
     closeContainer() {
-      this.$emit('on-close', true)
+      this.$emit("on-close", true);
     },
   },
 };
@@ -85,5 +83,4 @@ export default {
 .banner-bg {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
-
 </style>
